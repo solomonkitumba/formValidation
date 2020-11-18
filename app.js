@@ -59,6 +59,13 @@ function checkLength(input, min, max) {
     }
 }
 
+function checkPwdsMatch(input1, input2) {
+    if (input1.value !== input2.value) {
+        showError(input2, 'passwords dont match');
+    }
+
+}
+
 //event Listeners 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -67,5 +74,6 @@ form.addEventListener('submit', function(e) {
     checkLength(username, 3, 15);
     checkLength(password, 6, 12);
     checkEmail(email);
+    checkPwdsMatch(password, password2);
 
 });
