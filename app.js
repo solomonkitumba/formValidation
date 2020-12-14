@@ -66,6 +66,10 @@ function checkPwdsMatch(input1, input2) {
 
 }
 
+function formSubmited() {
+    alert("YOUR FORM WAS SUBMIED SUCCESSFULLY");
+}
+
 //event Listeners 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -75,5 +79,6 @@ form.addEventListener('submit', function(e) {
     checkLength(password, 6, 12);
     checkEmail(email);
     checkPwdsMatch(password, password2);
+    formSubmited();
 
 });
