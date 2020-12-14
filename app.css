@@ -90,3 +90,7 @@ form {
     margin-top: 20px;
     width: 100%;
 }
+
+.form h2 {
+    font-weight: lighter;
+}
